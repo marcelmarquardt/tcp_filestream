@@ -17,7 +17,7 @@ Client* Client::get(const char* host_name, int port)
     return &client;
 }
 
-void Client::print_progress(int i, int max) const
+void Client::print_progress(int i, int max)
 {
     i--; // not 0 based
     if (i == 0)

@@ -20,7 +20,7 @@ private:
 
     bool write(const char* buffer, size_t buffer_size) const;
     [[nodiscard]] std::unique_ptr<boost::asio::streambuf> read() const;
-    void print_progress(int i, int max) const;
+    static void print_progress(int i, int max);
 
     std::unique_ptr<boost::asio::ip::tcp::socket> _socket;
 };
